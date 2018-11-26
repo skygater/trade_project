@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity"
+    android:background="@color/backgroundColor"
+    >
+
+    <!-- Top ToolBar-->
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar2"
+        ></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar2"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!--Date Posted-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                >
+                <!--Date Posted TXT -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <!--Date Posted txt -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/filter_date"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorFilter"
+
+                        />
+                    <!--Geting info from slider-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="New"
+                        android:gravity="center"
+                        android:textColor="@color/justBlack"
+                        android:textStyle="bold"
+                        android:id="@+id/date_filter"
+                        />
+                </LinearLayout>
+                <!--Slider-->
+                <!-- DATE SLIDER ID IS HERE !!!!!!! -->
+                <com.etiennelawlor.discreteslider.library.ui.DiscreteSlider
+                    android:id="@+id/discreteslider"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="bottom"
+                    app:backdropFillColor="@color/textColorFilter"
+                    app:backdropStrokeColor="@color/colorAccent"
+                    app:horizontalBarThickness="6dp"
+                    app:tickMarkCount="5"
+                    app:tickMarkRadius="5dp"
+                    app:position="0"
+                    app:thumb="@drawable/slide_thumb"
+                    app:progressDrawable="@drawable/slide_transparent_progress_drawable"/>
+
+            </LinearLayout>
+            <!--Date Posted-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15sp"
+                android:background="@color/justLightGrey"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <!--Sort by-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                >
+                <!--Sort by  TXT -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/filter_sort"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorFilter"
+                        />
+                </LinearLayout>
+                <!--Sort by RadioGroup-->
+                <!-- SORT BY ID ARE HERE !!!!!!! -->
+                <include layout="@layout/filter_radio_group"></include>
+
+            </LinearLayout>
+            <!--Sort by-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15sp"
+                android:background="@color/justLightGrey"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <!--Map Filter-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                >
+                <!--Map TXT -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <!--MAP txt -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/filter_map"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorFilter"
+
+                        />
+                    <!--Geting info from slider-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="New"
+                        android:gravity="center"
+                        android:textColor="@color/justBlack"
+                        android:textStyle="bold"
+                        android:id="@+id/map_filter"
+                        />
+                </LinearLayout>
+                <!-- RADIUS SLIDER ID IS HERE !!!!!!! -->
+                <com.etiennelawlor.discreteslider.library.ui.DiscreteSlider
+                    android:id="@+id/discreteslider_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="bottom"
+                    app:backdropFillColor="@color/textColorFilter"
+                    app:backdropStrokeColor="@color/colorAccent"
+                    app:horizontalBarThickness="6dp"
+                    app:tickMarkCount="5"
+                    app:tickMarkRadius="5dp"
+                    app:position="0"
+                    app:thumb="@drawable/slide_thumb"
+                    app:progressDrawable="@drawable/slide_transparent_progress_drawable"/>
+            </LinearLayout>
+            <!--Map Filter-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15sp"
+                android:background="@color/justLightGrey"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <!--GoMAP -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="12dp"
+                >
+                <!--GoMAP txt -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/filter_go_map"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorFilter"
+                    />
+                <!--GoMap ICON-->
+                <!-- GO MAP BTN IS HERE !!!!!!! -->
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:src="@drawable/ic_arrow_forward"
+                    android:tint="@color/colorAccent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+
+                    />
+            </LinearLayout>
+            <!--GoMAP  -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15sp"
+                android:background="@color/justLightGrey"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <!--Filter Category -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                >
+                <!--CAT TXT -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="8dp"
+                    >
+                    <!--CAT txt -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/filter_category"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorFilter"
+                        />
+                </LinearLayout>
+                <!-- CATEGORIES ID ARE HERE !!!!!!! -->
+                <include layout="@layout/filter_check_boxez"></include>
+            </LinearLayout>
+            <!--Filter Category -->
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/cat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/filter_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="#text #text #text #text #text #text #text #text"
+            android:textColor="@color/justWhite"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

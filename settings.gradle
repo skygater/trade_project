@@ -1,0 +1,2 @@
+include ':app', ':bottomNav', ':bottomnav'
+project(':bottomNav').projectDir = new File('ahbottomnavigation')

@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Bananaz</string>
+
+    <string name="filter_date">Date Posted</string>
+    <string name="filter_sort">Sort by</string>
+    <string name="filter_map">Distance</string>
+    <string name="filter_go_map">See the map</string>
+    <string name="filter_category">Categories</string>
+    <string name="search">Search</string>
+
+    <string name="login_title">Log in</string>
+    <string name="login_hint_email">Enter e-mail</string>
+    <string name="login_hint_password">Enter password</string>
+    <string name="login_checkbox_visible">Show password</string>
+    <string name="login_checkbox_notvisible">Hide password</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_btn">log in</string>
+    <string name="login_create_account">New? Create account today!</string>
+    <string name="login_error_email_pass">Enter both credentials!</string>
+    <string name="login_error_email_pattern">Enter your e-mail address</string>
+
+    <string name="singup_title">Sing Up</string>
+    <string name="singup_hint_name">Enter name</string>
+    <string name="singup_hint_lastname">Enter lastname</string>
+    <string name="singup_hint_email">Enter e-mail</string>
+    <string name="singup_hint_password">Enter password</string>
+    <string name="singup_hint_password_confirm">Confirm password</string>
+    <string name="singup_terms_condition">Accept terms and conditions</string>
+    <string name="singup_btn">Sing up</string>
+    <string name="singup_login">Already user? Log in!</string>
+    <string name="singup_error_filds">Enter all fields</string>
+    <string name="singup_error_email">Enter right e-mail address</string>
+    <string name="singup_error_password">Password mismatch </string>
+    <string name="singup_error_terms">Please accept terms and conditions</string>
+    <string name="succes_singup">Success! We send you e-mail.</string>
+
+    <string name="forgot_title">Enter registered e-mail</string>
+    <string name="forgot_hint_email">Enter e-mail</string>
+    <string name="forgot_back">BACK</string>
+    <string name="forgot_submit">SUBMIT</string>
+    <string name="forgot_error_fields">Enter your e-mail</string>
+    <string name="forgot_error_email">Enter e-mail address</string>
+    <string name="succes_forgot">Success! We send you e-mail.</string>
+
+    <string name="tab_three_button_buy">Interested</string>
+    <string name="tab_three_button_bought">Bought</string>
+    <string name="tab_three_button_selling">Selling</string>
+    <string name="tab_three_button_sold">Sold</string>
+
+    <string name="step_next_btn">Next</string>
+    <string name="step_back_btn">Back</string>
+    <string name="step_one_title">Info.</string>
+    <string name="step_two_title">Location</string>
+    <string name="step_three_title">Contact</string>
+
+    <string name="step_one_picture_txt">ADD PICTURE</string>
+    <string name="step_one_btn_deleteall">Delete all</string>
+    <string name="step_one_info_txt">PRODUCT INFO.</string>
+    <string name="step_one_info_title_hint">Product name</string>
+    <string name="step_one_info_description_hint">Description</string>
+    
+    <string name="step_one_info_limit_pic">You are at limit.</string>
+    <string name="step_one_info_noPic">There is nothing to delete!</string>
+    <string name="step_one_info_title_er">Please add product name.</string>
+    <string name="step_one_info_description_er">Please add product description.</string>
+    <string name="step_one_category_txt">CATEGORY</string>
+
+    <string name="step_two_mapLocation">Enter your location</string>
+
+    <string name="step_three_price">Enter price</string>
+    <string name="step_three_info_user_title">Contact information</string>
+    <string name="step_three_user_tel">Enter your tel. number</string>
+    <string name="step_three_user_email">Enter your e-mail</string>
+
+
+
+</resources>

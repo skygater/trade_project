@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <!--ImagePicker_STYLE -->
+    <style name="ImagePickerTheme" parent="ef_BaseTheme">
+        <item name="colorPrimary">#607D8B</item>
+        <item name="colorPrimaryDark">#455A64</item>
+        <item name="colorAccent">@color/ef_colorAccent</item>
+    </style>
+    <!--ImagePicker_STYLE -->
+    <!--TOOLBAR_STYLE -->
+    <style name="NavBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/justWhite</item>
+
+    </style>
+    <style name="ActionBarThemeOverlay" parent="">
+        <!--<item name="android:textColorPrimary">#fff</item>-->
+
+        <!--Left icon color-->
+        <item name="colorControlNormal">#fff</item>
+        <item name="actionMenuTextColor">#fff</item>
+        <item name="android:editTextColor">#fff</item>
+        <!--<item name="android:textColorSecondary">@color/colorAccent</item>-->
+
+        <!--Left icon hightlight color-->
+        <item name="colorControlHighlight">#3fff</item>
+    </style>
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <!--Title Color & Size-->
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--TOOLBAR_STYLE -->
+
+</resources>

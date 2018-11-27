@@ -4,6 +4,7 @@
     <color name="colorPrimary">#ff3f34</color>
     <color name="colorPrimaryDark">#ff3f34</color>
     <color name="lipsRed">#ff0000 </color>
+    <color name="radiusIn">#66ff5e57</color>
     <!-- 50shades of Grey -->
     <color name="justBlack">#000000</color>
     <color name="textColorFilter">#6F6F6F</color>
